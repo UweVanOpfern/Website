@@ -1,3 +1,8 @@
+export const getImageSizeBasedOnDeviceRatio = (size: number): number => {
+  const {devicePixelRatio} = window;
+  return size * devicePixelRatio;
+};
+
 export const getCustomClassNames = (
   classNames: string | undefined,
   suffix: string,
